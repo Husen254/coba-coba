@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1a1a40, #3b0a63);
+    color: #fff;
+  }
+  
+  /* Header */
+  header {
+    width: 100%;
+    padding: 20px 0;
+    background: transparent;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .logo span {
+    color: #a259ff;
+  }
+  
+  /* Nav */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a:focus {
+    color: #a259ff;
+  }
+  
+  nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #a259ff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  /* Hero Text */
+  .hero-text {
+    max-width: 600px;
+  }
+  
+  .hero-text h2 {
+    font-size: 48px;
+    font-weight: 700;
+  }
+  
+  .hero-text h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #a259ff;
+    margin: 10px 0;
+  }
+  
+  .hero-text p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 1.7;
+  }
+  
+  .buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .btn {
+    padding: 12px 25px;
+    background: #fff;
+    color: #000;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: #a259ff;
+    color: #fff;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  
+  .social-icons a:hover {
+    background: #a259ff;
+  }
+  
+  /* Hero Image */
+  .hero-img img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #a259ff;
+    box-shadow: 0 0 30px #a259ff80;
+  }
+  
